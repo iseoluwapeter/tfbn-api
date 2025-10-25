@@ -15,6 +15,5 @@ __pycache__/
 *.db
 *.sqlite3
 
-# SSL certs
-certs/
+
 
