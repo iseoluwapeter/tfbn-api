@@ -17,4 +17,4 @@ __pycache__/
 
 # SSL certs
 certs/
-*.pem
+
