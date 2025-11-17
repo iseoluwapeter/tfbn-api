@@ -33,6 +33,8 @@ async def devotional(db:dbDep, skip: int =Query(0, ge=0), limit: int= Query(10, 
     devotionals = db.query(Devotional).order_by(desc(Devotional.date)).offset(skip).limit(limit).all()
     total = db.query(Devotional).count()
 
+
+
     return {
         "message": "Successfully fetched devotionals",
         "total": total,
@@ -138,8 +140,7 @@ async def devotional(db:dbDep, devotional_id: int, title: str = Form(...),
 
 
     return {
-        "message": f" {devotional.title} updated successfully",
-        
+        "message": f" {devotional.title} updated successfully",  
     }
 
     

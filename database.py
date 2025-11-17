@@ -27,3 +27,9 @@ connect_args = {"ssl": {"ca": ca_path}}
 engine = create_engine(SQL_ALCHEMY_URL, connect_args=connect_args)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
+
+
+# SQL_ALCHEMY_URL ="sqlite:///./faithlife.db"
+# engine = create_engine(SQL_ALCHEMY_URL)
+# SessionLocal= sessionmaker(autocommit=False, autoflush=False, bind=engine)
+# Base =declarative_base()
